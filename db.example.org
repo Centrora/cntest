@@ -1,0 +1,18 @@
+; BIND db file for example.org
+
+$TTL 86400
+
+@       IN      SOA     ns1.example.org.      admin.example.org. (
+                        2018071101	; serial number YYMMDDNN
+                        28800           ; Refresh
+                        7200            ; Retry
+                        864000          ; Expire
+                        86400           ; Min TTL
+			)
+
+                NS      ns1.example.org. 
+
+                MX      10 mx.example.org.
+
+
+$ORIGIN example.org.
